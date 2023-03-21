@@ -2,7 +2,8 @@
 const popup = document.getElementById("pop");
 var displayStyle = window.getComputedStyle(popup).getPropertyValue("display");
 const myVideo = document.getElementById("my-video");
-var totalPlaytime = 0;
+let totalPlaytime = 0;
+let currentSourceIndex = 0;
 
 if (displayStyle === "block") {
   //alert("Cheeze");
@@ -19,9 +20,9 @@ function adPlay() {
         const videoSources = [
             "./videos/c.mp4",
             "./videos/b.mp4",
+            "./videos/d.mp4",
             "./videos/e.mp4"
         ];
-        let currentSourceIndex = 0;
     let totalPlaytime = 0;
     myVideo.play();
     
@@ -54,7 +55,7 @@ function adPlay() {
             //display.innerHTML = "Total Live Play Time: " + formatTime(totalPlaytime + currentTime);
     
             // Check if the total playtime is greater than or equal to 30 seconds
-            if (totalPlaytime + currentTime >= 30) {
+            if (totalPlaytime + currentTime >= 29) {
                 // If it is, alert the user and pause the current video
                 myVideo.pause();
                 myVideo.currentTime = 0;
@@ -103,7 +104,7 @@ function enableNavigation() {
 function startCountdown() {
     adPlay();
     pausePlay();
-    var popup = document.getElementById("pop");
+
     document.getElementById("countdown").innerHTML = remainingSeconds;
     countdownInterval = setInterval(function () {
         remainingSeconds--;
@@ -113,6 +114,7 @@ function startCountdown() {
             popup.style.display = "none";
             enableNavigation();
             document.getElementById("output").innerHTML = "Countdown successful!";
+            currentSourceIndex = 0;
             myVideo.pause();
             myVideo.currentTime=0;
             remainingSeconds = 30;
@@ -125,7 +127,7 @@ function pauseCountdown() {
 }
 
 function showPopup() {
-    var popup = document.getElementById("pop");
+    currentSourceIndex = 0;
     if (popup.style.display === "block") {
         return;
     }
@@ -136,11 +138,13 @@ function showPopup() {
     window.addEventListener("focus", function () {
         if (remainingSeconds > 0) {
             startCountdown();
+            console.log("Err");
         }
     });
 }
 
 function closePopup() {
+    currentSourceIndex = 0;
     myVideo.pause();
     myVideo.currentTime=0;
     restartAnimation();

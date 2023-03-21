@@ -23,3 +23,7 @@
   .hidden{
     display: none;
   }
+
+  .barkGr{
+    background-image: url("./images/2.png");
+  }
