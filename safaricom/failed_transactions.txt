@@ -1,0 +1,4 @@
+Result Code: 1032
+Result Description: Request cancelled by user
+Result Code: 2001
+Result Description: The initiator information is invalid.

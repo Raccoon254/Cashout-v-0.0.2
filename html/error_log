@@ -1,0 +1,296 @@
+[16-Feb-2023 20:52:57 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 21
+[16-Feb-2023 20:52:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 22
+[16-Feb-2023 20:52:57 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 34
+[16-Feb-2023 20:52:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 35
+[16-Feb-2023 20:52:57 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 54
+[16-Feb-2023 20:52:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::fetch_assoc() in /home/cashoutc/public_html/html/index.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 61
+[16-Feb-2023 20:54:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/index.php:23
+Stack trace:
+#0 /home/cashoutc/public_html/html/index.php(23): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 23
+[16-Feb-2023 20:55:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 460
+[16-Feb-2023 20:55:01 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 471
+[16-Feb-2023 20:55:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/index.php:568
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 568
+[16-Feb-2023 20:55:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 460
+[16-Feb-2023 20:55:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 471
+[16-Feb-2023 20:55:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/index.php:568
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 568
+[16-Feb-2023 21:18:45 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 460
+[16-Feb-2023 21:18:45 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 471
+[16-Feb-2023 21:18:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/index.php:568
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 568
+[16-Feb-2023 21:18:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 12
+[16-Feb-2023 21:18:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 13
+[16-Feb-2023 21:18:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 522
+[16-Feb-2023 21:18:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 526
+[16-Feb-2023 21:18:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 530
+[16-Feb-2023 21:18:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 533
+[16-Feb-2023 21:18:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/settings.php:658
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 658
+[16-Feb-2023 21:21:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 12
+[16-Feb-2023 21:21:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 13
+[16-Feb-2023 21:21:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 522
+[16-Feb-2023 21:21:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 526
+[16-Feb-2023 21:21:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 530
+[16-Feb-2023 21:21:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 533
+[16-Feb-2023 21:21:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/settings.php:658
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 658
+[16-Feb-2023 21:30:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 460
+[16-Feb-2023 21:30:40 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 471
+[16-Feb-2023 21:30:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/index.php:568
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 568
+[16-Feb-2023 21:30:43 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 460
+[16-Feb-2023 21:30:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 471
+[16-Feb-2023 21:30:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/index.php:568
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 568
+[16-Feb-2023 21:38:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/index.php on line 460
+[16-Feb-2023 21:38:16 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/index.php on line 471
+[16-Feb-2023 21:38:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/index.php:568
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 568
+[16-Feb-2023 21:54:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/index.php:23
+Stack trace:
+#0 /home/cashoutc/public_html/html/index.php(23): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 23
+[16-Feb-2023 21:55:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/index.php:23
+Stack trace:
+#0 /home/cashoutc/public_html/html/index.php(23): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/index.php on line 23
+[16-Feb-2023 21:55:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 12
+[16-Feb-2023 21:55:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 13
+[16-Feb-2023 21:55:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 522
+[16-Feb-2023 21:55:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/cashoutc/public_html/html/settings.php on line 526
+[16-Feb-2023 21:55:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 530
+[16-Feb-2023 21:55:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cashoutc/public_html/html/settings.php on line 533
+[16-Feb-2023 21:55:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDO::close() in /home/cashoutc/public_html/html/settings.php:658
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 658
+[16-Feb-2023 21:56:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:14
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 14
+[16-Feb-2023 21:56:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:560
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(560): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 560
+[16-Feb-2023 21:57:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:57:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:57:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:57:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:57:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:57:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:57:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:59:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:59:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:59:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:59:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:59:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[16-Feb-2023 21:59:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Users' doesn't exist in /home/cashoutc/public_html/html/settings.php:567
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(567): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 567
+[25-Feb-2023 18:57:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'YVLSAS' in 'where clause' in /home/cashoutc/public_html/html/registerEdit.php:290
+Stack trace:
+#0 /home/cashoutc/public_html/html/registerEdit.php(290): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/registerEdit.php on line 290
+[25-Feb-2023 18:57:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'YVLSAS' in 'where clause' in /home/cashoutc/public_html/html/registerEdit.php:290
+Stack trace:
+#0 /home/cashoutc/public_html/html/registerEdit.php(290): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/registerEdit.php on line 290
+[25-Feb-2023 18:59:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/cashoutc/public_html/html/registerEdit.php:291
+Stack trace:
+#0 /home/cashoutc/public_html/html/registerEdit.php(291): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/registerEdit.php on line 291
+[25-Feb-2023 19:01:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/cashoutc/public_html/html/registerEdit.php:291
+Stack trace:
+#0 /home/cashoutc/public_html/html/registerEdit.php(291): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/registerEdit.php on line 291
+[25-Feb-2023 19:01:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/cashoutc/public_html/html/registerEdit.php:291
+Stack trace:
+#0 /home/cashoutc/public_html/html/registerEdit.php(291): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/registerEdit.php on line 291
+[25-Feb-2023 19:01:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/cashoutc/public_html/html/registerEdit.php:291
+Stack trace:
+#0 /home/cashoutc/public_html/html/registerEdit.php(291): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/registerEdit.php on line 291
+[25-Feb-2023 19:43:58 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/cashoutc/public_html/html/index.php:1) in /home/cashoutc/public_html/html/index.php on line 4
+[25-Feb-2023 19:43:58 UTC] PHP Warning:  require_once(db_connect.php): failed to open stream: No such file or directory in /home/cashoutc/public_html/html/index.php on line 5
+[25-Feb-2023 19:43:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_connect.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/cashoutc/public_html/html/index.php on line 5
+[25-Feb-2023 19:44:44 UTC] PHP Warning:  require_once(db_connect.php): failed to open stream: No such file or directory in /home/cashoutc/public_html/html/index.php on line 3
+[25-Feb-2023 19:44:44 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_connect.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/cashoutc/public_html/html/index.php on line 3
+[25-Feb-2023 20:28:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/cashoutc/public_html/html/settings.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 30
+[26-Feb-2023 06:08:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/cashoutc/public_html/html/settings.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 30
+[26-Feb-2023 08:18:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/cashoutc/public_html/html/index.php on line 231
+[26-Feb-2023 08:21:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/cashoutc/public_html/html/index.php on line 229
+[26-Feb-2023 08:21:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/cashoutc/public_html/html/index.php on line 229
+[26-Feb-2023 08:21:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/cashoutc/public_html/html/index.php on line 229
+[26-Feb-2023 08:21:32 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/cashoutc/public_html/html/index.php on line 229
+[26-Feb-2023 08:54:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cashoutc/public_html/html/index.php:31) in /home/cashoutc/public_html/html/index.php on line 44
+[26-Feb-2023 08:55:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cashoutc/public_html/html/index.php:27) in /home/cashoutc/public_html/html/index.php on line 43
+[27-Feb-2023 00:50:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/cashoutc/public_html/html/settings.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 30
+[27-Feb-2023 00:51:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cashoutc_data.Transactions' doesn't exist in /home/cashoutc/public_html/html/settings.php:142
+Stack trace:
+#0 /home/cashoutc/public_html/html/settings.php(142): PDOStatement->execute()
+#1 {main}
+  thrown in /home/cashoutc/public_html/html/settings.php on line 142
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[03-Mar-2023 16:35:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[05-Mar-2023 15:13:03 UTC] PHP Warning:  Undefined variable $nameUser in /home/cashoutc/public_html/html/registerEdit.php on line 152
+[05-Mar-2023 15:13:12 UTC] PHP Warning:  Undefined variable $nameUser in /home/cashoutc/public_html/html/registerEdit.php on line 152
+[05-Mar-2023 17:07:55 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/settings.php on line 10
+[05-Mar-2023 17:07:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 16
+[05-Mar-2023 17:07:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 17
+[05-Mar-2023 17:07:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 18
+[06-Mar-2023 18:01:14 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/settings.php on line 10
+[06-Mar-2023 18:01:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 16
+[06-Mar-2023 18:01:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 17
+[06-Mar-2023 18:01:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 18
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[08-Mar-2023 21:39:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[08-Mar-2023 22:58:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[09-Mar-2023 12:21:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[09-Mar-2023 18:39:47 UTC] PHP Warning:  Undefined variable $nameUser in /home/cashoutc/public_html/html/registerEdit.php on line 152
+[09-Mar-2023 18:41:00 UTC] PHP Warning:  Undefined variable $nameUser in /home/cashoutc/public_html/html/registerEdit.php on line 152
+[09-Mar-2023 18:48:24 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/settings.php on line 10
+[09-Mar-2023 18:48:24 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 16
+[09-Mar-2023 18:48:24 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 17
+[09-Mar-2023 18:48:24 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/settings.php on line 18
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[11-Mar-2023 17:07:45 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[11-Mar-2023 17:24:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[11-Mar-2023 17:25:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 19
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 25
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 26
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 27
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Undefined array key "email" in /home/cashoutc/public_html/html/dashboard.php on line 31
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 37
+[11-Mar-2023 17:25:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/cashoutc/public_html/html/dashboard.php on line 38

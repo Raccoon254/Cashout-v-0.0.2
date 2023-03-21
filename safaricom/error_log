@@ -1,0 +1,101 @@
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Undefined array key "Body" in /home/cashoutc/public_html/safaricom/handler.php on line 14
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 14
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 14
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Undefined array key "Body" in /home/cashoutc/public_html/safaricom/handler.php on line 16
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 16
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 16
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Undefined array key "Body" in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Undefined array key "Body" in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:19:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 17:32:25 Africa/Nairobi] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cashoutc/public_html/safaricom/deposit.php:1) in /home/cashoutc/public_html/safaricom/deposit.php on line 57
+[13-Mar-2023 17:34:05 Africa/Nairobi] PHP Warning:  Undefined variable $access_token in /home/cashoutc/public_html/safaricom/deposit.php on line 24
+[13-Mar-2023 17:34:06 Africa/Nairobi] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cashoutc/public_html/safaricom/deposit.php:24) in /home/cashoutc/public_html/safaricom/deposit.php on line 55
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 5
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 5
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 5
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 6
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 6
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 6
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:34:50 UTC] PHP Warning:  Undefined variable $mysqli in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:34:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/cashoutc/public_html/safaricom/handler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:35:59 UTC] PHP Warning:  Undefined variable $mysqli in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:35:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/cashoutc/public_html/safaricom/handler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 5
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 5
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 5
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 6
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 6
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 6
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 10
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 11
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 12
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/cashoutc/public_html/safaricom/handler.php on line 13
+[13-Mar-2023 14:36:02 UTC] PHP Warning:  Undefined variable $mysqli in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:36:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/cashoutc/public_html/safaricom/handler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/safaricom/handler.php on line 18
+[13-Mar-2023 14:40:51 UTC] PHP Warning:  Undefined variable $mysqli in /home/cashoutc/public_html/safaricom/handler.php on line 17
+[13-Mar-2023 14:40:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/cashoutc/public_html/safaricom/handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/cashoutc/public_html/safaricom/handler.php on line 17

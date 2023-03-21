@@ -1,0 +1,17 @@
+int total time = 30s
+
+for each video{
+play video
+if video >= 30 seconds pause at 30 and alert watchtome 30 s success
+watchtime = 30s- the firstvideo duration
+else play the next video until total time is 30
+until total time is 30
+pause and alert watch time success
+
+
+the videos should only autoplay if the #pop {
+    display: block;} is not none;
+the videos total watch time should be 30 seconds
+idf the first video is 6 seconds and the next is 40 second the next video should only play for 24 seconds 
+
+the total watchtime for all the videos should be 30 seconds the viewer should only see 30s of video content, to total sum of the video durations is more than 30s trim the last video
