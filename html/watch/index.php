@@ -196,6 +196,35 @@ echo '
                           </a>
                         </li>
                     <style>
+                    #pop {
+                      display: none;
+                      position: inherit;
+                      z-index: 999999999999999999999999999;
+                      padding: 20px;
+                      background-color: #fff;
+                      border: 2px solid #9500ff;
+                      box-shadow: 0px 0px 5px #534848;
+                      margin-right: 50px;
+                    }
+                  
+                    .closeButton{
+                      position: absolute;
+                      top: 2%;
+                      right: 2%;
+                    }
+                    .adText{
+                      position: absolute;
+                      z-index: 99999999;
+                      top: 2%;
+                      left: 2%;
+                    }
+                    .hidden{
+                      display: none;
+                    }
+                  
+                    .barkGr{
+                      background-image: url("./images/2.png");
+                    }
                       .myBadge{
                         padding: 0px;
                         margin: 0px 2px 0px;
@@ -497,7 +526,7 @@ echo'<li onclick="showPopup()" class="d-flex mb-4 pb-1">
                              echo '
                     
 
-                    
+                    <!-- Depreciated
                     
                       <li onclick="showPopup()" class="d-flex mb-4 pb-1">
                         <div class="flex-shrink-0 col-4 me-3">
@@ -516,7 +545,7 @@ echo'<li onclick="showPopup()" class="d-flex mb-4 pb-1">
                           </div>
                         </div>
                       </li>
-                                           
+                      -->                 
                     </ul>
                   </div>
                 </div>

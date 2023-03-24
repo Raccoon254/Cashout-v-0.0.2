@@ -149,7 +149,7 @@ function generateReferralCode($conn)
 
 //create the form
 
-echo"$nameUser";
+//echo"$nameUser";
 
 echo '
 
@@ -177,6 +177,16 @@ echo '
     
 
     <title>Join Cashout | Earn</title>
+    
+
+    
+    <!--------------------------Added Jquerry------------------------------------------------------>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./verification.js"></script>
+        <link rel="stylesheet" href="./custom.css" class="template-customizer-core-css" />
+    <!-------------------------------------------------------------------------------->
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/avatars/Cash OUT Co .png">
@@ -221,7 +231,7 @@ echo '
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
-              <div class="app-brand justify-content-center" style="border: 1px solid blue; border-radius: 10px; background-color: rgba(99, 165, 12, 0.562); padding: 5px 0px 5px 0px;">
+              <div class="bg-success app-brand justify-content-center" style="border: 1px solid blue; border-radius: 10px; padding: 5px 0px 5px 0px;">
                 <a href="index.html" class="app-brand-link gap-2">
                   <span class="">
                     <img width="200px" src="../assets/img/avatars/Cash out Typography .png" alt="Cash Out Logo" />
@@ -246,9 +256,65 @@ echo '
                 </div>
 
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
+                
+                  <label for="email" class="form-label">Email
+                  <span class="text-primary"><i id="verificationIcon" class="bx bx-flashing" ></i></span>
+                  </label>
+                  <div class="input-wrapper">
+                  <button type="button" class="rounded btn border-secondary email-button"  onclick="showDiv()">Send OTP</button>
                   <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
                 </div>
+
+                                
+                 
+               <!------------------------------------------------------------------------------->
+                                  
+                <div id="errorDiv" class=" mt-2 rounded bg-success">
+                
+                
+                  <div class="toast-header pb-0">
+                    <i class="bx bx-bell me-2"></i>
+                    <div class="me-auto fw-semibold">Notification</div>
+                    <small>Alert</small>
+                    <button type="button" class="btn-close" onclick="closeErrorDiv()" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+
+                  OTP Verification Required ! <br>
+                  <div class="d-flex mb-2">
+
+      
+                                    
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    id="otp"
+                    name="otp"
+                    placeholder="Enter OTP"
+                    autofocus
+                    required
+                  />
+                  
+                  
+                </div>
+                <input id="verifyOtp" class="btn btn-primary d-block btn-user w-100" type="submit" name="verifyOtp" value="Verify OTP"/>
+                  
+                  </div>
+                </div>
+                
+               <!------------------------------------------------------------------------------->
+
+               <div id="message" class="hidden"></div>
+               
+               <div id="errMessage" class=""></div>
+
+
+
+               <!-------------------------------------->
+
+
+               
+                  </div>
                 
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
@@ -260,6 +326,7 @@ echo '
                       name="password"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password"
+                      required
                     />
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
@@ -316,7 +383,13 @@ $nameUser = $rowUser['name'];
                     </label>
                   </div>
                 </div>
-                <input class="btn btn-primary d-block btn-user w-100" type="submit" name="submit" value="Sign Up"/>
+
+                <!----------------------->
+                <input id="activateOnEmail" class="btn btn-primary d-block btn-user w-100" type="submit" name="submit" value="Sign Up"/>
+
+
+
+                
               </form>
 
               <p class="text-center">
@@ -343,6 +416,7 @@ $nameUser = $rowUser['name'];
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="./verification.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>

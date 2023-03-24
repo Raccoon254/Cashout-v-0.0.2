@@ -1,0 +1,18 @@
+.hidden{
+    display: none;
+}
+.input-wrapper {
+    position: relative;
+  }
+  
+  .email-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 10px;
+  }
+  
+  .form-control {
+    padding-right: 80px; /* adjust the padding to make room for the button */
+  }
+  
