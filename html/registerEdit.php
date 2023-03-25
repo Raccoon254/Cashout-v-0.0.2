@@ -3,126 +3,120 @@ require_once '../db_connect.php';
 
 // check if the user has been referred
 if (isset($_GET['x'])) {
-    $code = htmlspecialchars($_GET['x']);
+  $code = htmlspecialchars($_GET['x']);
 } else {
-    $code = "";
+  $code = "";
 }
 // check if the form has been submitted
 if (isset($_POST['submit'])) {
-    // retrieve form data
-    $name = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $refer_code = generateReferralCode($conn);
-    $balance = 0;
-    if ($code == null) {
-        $referral_code = $_POST['referralCode'];
-    } else {
-        $referral_code = $code;
-    }
+  // retrieve form data
+  $name = $_POST['username'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+  $refer_code = generateReferralCode($conn);
+  $balance = 0;
+ 
+  $referral_code = $_POST['referralCode'];
+  
 
-    // check if referral code is valid
-    if ($referral_code) {
-        $query = "SELECT * FROM users WHERE referral_code=:referral_code";
-        $stmt = $conn->prepare($query);
-        $stmt->execute(array(':referral_code' => $referral_code));
-        if ($stmt->rowCount() == 0) {
-            $referral_code = null; // if the referral code is invalid, set it to null
-        }
-    }
+  // check if referral code is valid
+  if ($referral_code) {
+      $query = "SELECT * FROM users WHERE referral_code=:referral_code";
+      $stmt = $conn->prepare($query);
+      $stmt->execute(array(':referral_code' => $referral_code));
+      if ($stmt->rowCount() == 0) {
+          $referral_code = null; // if the referral code is invalid, set it to null
+      }
+  }
 
-    // check if the email already exists
-    $query = "SELECT * FROM users WHERE email=:email";
-    $stmt = $conn->prepare($query);
-    $stmt->execute(array(':email' => $email));
-    if ($stmt->rowCount() > 0) {
-        echo '
-        <div class="bs-toast toast toast-placement-ex m-2 fade bg-danger top-50 start-50 translate-middle show" role="alert" aria-live="assertive" aria-atomic="true" data-delay="1000">
-                <div class="toast-header">
-                  <i class="bx bx-bell me-2"></i>
-                  <div class="me-auto fw-semibold">Error</div>
-                  <small>1 second ago</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">Either you name or Email is already registered.</div>
-              </div>
-      ';
-    } else {
-        $query = "SELECT * FROM users WHERE name=:name";
-        $stmt = $conn->prepare($query);
-        $stmt->execute(array(':name' => $name));
-        if ($stmt->rowCount() > 0) {
-            echo "Sorry, that name already exists. Please try again.";
-        } else {
-            // insert the new user into the Users table
-            $query = "INSERT INTO users (name, email, password, referral_code, balance, referred_by)
-                  VALUES (:name, :email, :password, :refer_code, :balance, :referral_code)";
-            $stmt = $conn->prepare($query);
-            $result = $stmt->execute(array(':name' => $name, ':email' => $email, ':password' => $password, ':refer_code' => $refer_code, ':balance' => $balance, ':referral_code' => $referral_code));
-            if ($result) {
-                if ($referral_code) {
-                    $emailAssocUserQuery="SELECT * FROM users WHERE referral_code=:referral_code";
-                    $stmt = $conn->prepare($emailAssocUserQuery);
-                    $stmt->execute(array(':referral_code' => $referral_code));
-                    $rowUser = $stmt->fetch();
-                    $emailAssocUser = $rowUser['email'];
-                    $referrerName=$rowUser['name'];
+  // check if the email already exists
+  $query = "SELECT * FROM users WHERE email=:email";
+  $stmt = $conn->prepare($query);
+  $stmt->execute(array(':email' => $email));
+  
+  if ($stmt->rowCount() > 0) {
+      echo "Sorry, that email already exists. Please try again.";
+  } else {
+      $query = "SELECT * FROM users WHERE name=:name";
+      $stmt = $conn->prepare($query);
+      $stmt->execute(array(':name' => $name));
+      if ($stmt->rowCount() > 0) {
+          echo "Sorry, that name already exists. Please try again.";
+      } else {
+          // insert the new user into the Users table
+          $query = "INSERT INTO users (name, email, password, referral_code, balance, referred_by)
+                VALUES (:name, :email, :password, :refer_code, :balance, :referral_code)";
+          $stmt = $conn->prepare($query);
+          $result = $stmt->execute(array(':name' => $name, ':email' => $email, ':password' => $password, ':refer_code' => $refer_code, ':balance' => $balance, ':referral_code' => $referral_code));
+          if ($result) {
+              if ($referral_code) {
+                  $emailAssocUserQuery="SELECT * FROM users WHERE referral_code=:referral_code";
+                  $stmt = $conn->prepare($emailAssocUserQuery);
+                  $stmt->execute(array(':referral_code' => $referral_code));
+                  $rowUser = $stmt->fetch();
+                  $emailAssocUser = $rowUser['email'];
 
-                    $referredAssocUser = $rowUser['referred_by'];
-                    $emailAssocJoining="$email";
-                    $descriptionAssoc="";
-                    $earningsUpdateDetails="INSERT INTO refferraldetails(referrer, referred, type) VALUES (:emailAssocUser, :emailAssocJoining, :descriptionAssoc)";
-                    $query_upd = "UPDATE users SET balance = balance + 50 where referral_code = :referral_code";
+                  $referredAssocUser = $rowUser['referred_by'];
+                  $emailAssocJoining="$email";
+                  $descriptionAssoc="";
+                  $earningsUpdateDetails="INSERT INTO refferraldetails(referrer, referred, type) VALUES (:emailAssocUser, :emailAssocJoining, :descriptionAssoc)";
+                  $query_upd = "UPDATE users SET balance = balance + 50 where referral_code = :referral_code";
 
-                    $dd=$referredAssocUser;
-                    $em="SELECT email FROM users WHERE referral_code=:dd";
-                    $stmt = $conn->prepare($em);
-                    $stmt->execute(array(':dd' => $dd));
-                    $ro = $stmt->fetch();
-                    
+                  $dd=$referredAssocUser;
+                  $em = "SELECT email FROM users WHERE referral_code=:dd";
+                  $stmt = $conn->prepare($em);
+                  $stmt->execute(array(':dd' => $dd));
+                  $ro = $stmt->fetch();
 
-                    $emai= $ro['email'];
-                    
-                    $emailOne="$emailAssocUser";
-                    $emailTwo="$emai";
-                    $emailCurrent="$email";
-                    $amountOne=50;
-                    $amountTwo=20;
-                    $amountCurrent=100;
-                    $typeOne='direct';
-                    $typeTwo='indirect';
-                    $typeCurrent='Joined';
-    
-                    $queryUpdateForSecondLevel = "UPDATE users SET balance = balance + 20 where referral_code = :referredAssocUser";
-                    $stmt = $conn->prepare($queryUpdateForSecondLevel);
-                    $stmt->execute(array(':referredAssocUser' => $referredAssocUser));
-    
-                    $transactionUpdateOne="INSERT INTO transactions(email, amount, type) VALUES (:emailOne,:amountOne,:typeOne)";
-                    $stmt = $conn->prepare($transactionUpdateOne);
-                    $stmt->execute(array(':emailOne' => $emailOne, ':amountOne' => $amountOne, ':typeOne' => $typeOne));
-    
-                    $transactionUpdateTwo="INSERT INTO transactions(email, amount, type) VALUES (:emailTwo,:amountTwo,:typeTwo)";
-                    $stmt = $conn->prepare($transactionUpdateTwo);
-                    $stmt->execute(array(':emailTwo' => $emailTwo, ':amountTwo' => $amountTwo, ':typeTwo' => $typeTwo));
-    
-                    $transactionUpdateCurrent="INSERT INTO transactions(email, amount, type) VALUES (:emailCurrent,:amountCurrent,:typeCurrent)";
-                    $stmt = $conn->prepare($transactionUpdateCurrent);
-                    $stmt->execute(array(':emailCurrent' => $emailCurrent, ':amountCurrent' => $amountCurrent, ':typeCurrent' => $typeCurrent));
-    
-                    $earningsUpdateDetails="INSERT INTO refferraldetails(referrer, referred, type) VALUES (:emailAssocUser,:emailAssocJoining,:descriptionAssoc)";
-                    $stmt = $conn->prepare($earningsUpdateDetails);
-                    $stmt->execute(array(':emailAssocUser' => $emailAssocUser, ':emailAssocJoining' => $emailAssocJoining, ':descriptionAssoc' => $descriptionAssoc));
-    
-                    $query_upd = "UPDATE users SET balance = balance + 50 where referral_code = :referral_code";
-                    $stmt = $conn->prepare($query_upd);
-                    $stmt->execute(array(':referral_code' => $referral_code));
-    
-                }
-                // redirect the user to the login page
-                header("Refresh:1; url=index.php");
-            } else {
-                echo "Sorry, there was an error. Please try again.";
-            }
+                  if ($stmt->rowCount() > 0) {
+                      $emai = $ro['email'];
+                      $emailTwo = $emai;
+                      $amountTwo = 20;
+                      $typeTwo = 'indirect';
+
+                      $queryUpdateForSecondLevel = "UPDATE users SET balance = balance + 20 where referral_code = :referredAssocUser";
+                      $stmt = $conn->prepare($queryUpdateForSecondLevel);
+                      $stmt->execute(array(':referredAssocUser' => $referredAssocUser));
+
+                      $transactionUpdateTwo = "INSERT INTO transactions(email, amount, type) VALUES (:emailTwo,:amountTwo,:typeTwo)";
+                      $stmt = $conn->prepare($transactionUpdateTwo);
+                      $stmt->execute(array(':emailTwo' => $emailTwo, ':amountTwo' => $amountTwo, ':typeTwo' => $typeTwo));
+                  }
+
+                  
+                  $emailOne="$emailAssocUser";
+                  $emailCurrent="$email";
+                  $amountOne=50;
+                  $amountCurrent=100;
+                  $typeOne='direct';
+                  $typeCurrent='Joined';
+  
+
+  
+                  $transactionUpdateOne="INSERT INTO transactions(email, amount, type) VALUES (:emailOne,:amountOne,:typeOne)";
+                  $stmt = $conn->prepare($transactionUpdateOne);
+                  $stmt->execute(array(':emailOne' => $emailOne, ':amountOne' => $amountOne, ':typeOne' => $typeOne));
+  
+
+  
+                  $transactionUpdateCurrent="INSERT INTO transactions(email, amount, type) VALUES (:emailCurrent,:amountCurrent,:typeCurrent)";
+                  $stmt = $conn->prepare($transactionUpdateCurrent);
+                  $stmt->execute(array(':emailCurrent' => $emailCurrent, ':amountCurrent' => $amountCurrent, ':typeCurrent' => $typeCurrent));
+  
+                  $earningsUpdateDetails="INSERT INTO refferraldetails(referrer, referred, type) VALUES (:emailAssocUser,:emailAssocJoining,:descriptionAssoc)";
+                  $stmt = $conn->prepare($earningsUpdateDetails);
+                  $stmt->execute(array(':emailAssocUser' => $emailAssocUser, ':emailAssocJoining' => $emailAssocJoining, ':descriptionAssoc' => $descriptionAssoc));
+  
+                  $query_upd = "UPDATE users SET balance = balance + 50 where referral_code = :referral_code";
+                  $stmt = $conn->prepare($query_upd);
+                  $stmt->execute(array(':referral_code' => $referral_code));
+  
+              }
+              // redirect the user to the login page
+              header("Refresh:6; url=index.php");
+          } else {
+              echo "Sorry, there was an error. Please try again.";
+          }
         }
     }
 }    
@@ -258,7 +252,7 @@ echo '
                 <div class="mb-3">
                 
                   <label for="email" class="form-label">Email
-                  <span class="text-primary"><i id="verificationIcon" class="bx bx-flashing" ></i></span>
+                  <span class="text-primary"><i  style="font-size: 12px;" id="verificationIcon" class="bx bx-spin" ></i></span>
                   </label>
                   <div class="input-wrapper">
                   <button type="button" class="rounded btn border-secondary email-button"  onclick="showDiv()">Send OTP</button>
@@ -269,18 +263,18 @@ echo '
                  
                <!------------------------------------------------------------------------------->
                                   
-                <div id="errorDiv" class=" mt-2 rounded bg-success">
+                <div id="errorDiv" class="hidden mt-2 rounded bg-success">
                 
                 
                   <div class="toast-header pb-0">
                     <i class="bx bx-bell me-2"></i>
-                    <div class="me-auto fw-semibold">Notification</div>
+                    <div class="me-auto fw-semibold">Check Your Email</div>
                     <small>Alert</small>
                     <button type="button" class="btn-close" onclick="closeErrorDiv()" aria-label="Close"></button>
                   </div>
                   <div class="toast-body">
-
-                  OTP Verification Required ! <br>
+Enter Code Sent to <span id="thisEmail"></span><br>
+                 <span class="small"> Can\'t See The code 😫 Check Spam Folder</span> <br>
                   <div class="d-flex mb-2">
 
       
@@ -304,7 +298,7 @@ echo '
                 
                <!------------------------------------------------------------------------------->
 
-               <div id="message" class="hidden"></div>
+               <div id="message" class="hidde"></div>
                
                <div id="errMessage" class=""></div>
 
@@ -360,13 +354,14 @@ $nameUser = $rowUser['name'];
         
                   echo'
                   <div class="mb-3">
-                  <label for="referralCode" class="form-label">Referred By &nbsp;</label>
+                  <label for="referralCode" class="form-label">Referred By&nbsp;'; echo"$nameUser"; echo'</label>
                   <input
                     type="text"
                     class="form-control"
                     id="referralCode"
                     name="referralCode"
-                    placeholder="'; echo"$nameUser"; echo'"
+                    placeholder="'; echo"$nameUser.$code"; echo'"
+                    value="'.$code.'"
                     readonly
                   />
                 </div>
